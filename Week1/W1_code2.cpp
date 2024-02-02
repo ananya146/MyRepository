@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-void search(int arr[],int key,int n)
+void binary_search(int arr[],int key,int l,int r)
 {
     while(l<=r)
     {
@@ -31,7 +31,7 @@ main()
         }
     cout<<"enter the key\n";
     cin>>key;
-    int result=search(arr,key,0,n-1);
+    int result=binary_search(arr,key,0,n-1);
 
     if(result==-1)
     {
